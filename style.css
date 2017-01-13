@@ -1,17 +1,25 @@
+
+.mymove{
+  height: 318px;
+  width: 173px;
+  position: fixed;
+  left: 0;
+  animation: mymove 8s linear;
+
+}
 .capguy-walk {
   height: 318px;
   width: 173px;
   display: block;
-  margin: 0 auto;
-  position: absolute;
   margin-top: 250px;
-  margin-left:550px;
+
 
 
 }
 
 .capguy-walk{
-  background: url("https://cdn.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker/capguy-walk.png");
+  /*background: url("https://cdn.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker/capguy-walk.png");*/
+  background: url("img/capguy-walk.png");
   padding: 5px;
   animation-name: capguy-walk;
   animation-duration: 1s;
@@ -20,16 +28,27 @@
   }
 
 @keyframes capguy-walk {
-  from{ background-position: 0 0}
-    to{background-position: -1472px 0}
-}
+  from{ background-position: 0 0 }
+    to{background-position: -1472px 0 }
+    }
+    @keyframes mymove {
+      to {left: 1200px;}
+    }
+
 .background{
 height: 100vh;
 width: 100vw;
 display: block;
 position: absolute;
-
 }
 body{
   margin: 0;
+}
+.t1{
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+  display: block;
+  position: absolute;
+  margin-left: 50px;
 }
