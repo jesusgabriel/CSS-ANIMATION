@@ -5,6 +5,7 @@
   position: fixed;
   left: 0;
   animation: mymove 8s linear;
+  animation-fill-mode: forwards;
 
 }
 .capguy-walk {
@@ -12,10 +13,10 @@
   width: 173px;
   display: block;
   margin-top: 250px;
+
 }
 
 .capguy-walk{
-  /*background: url("https://cdn.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker/capguy-walk.png");*/
   background: url("img/capguy-walk.png");
   padding: 5px;
   animation-name: capguy-walk;
@@ -29,7 +30,7 @@
     to{background-position: -1472px 0 }
     }
     @keyframes mymove {
-      to {left: 1200px;}
+      to {left: 1300px;}
     }
 
 
@@ -37,9 +38,35 @@
 height: 100vh;
 width: 100vw;
 display: block;
-margin: 0 auto;
 position: absolute;
 }
 body{
-  width: 100%;
+margin: 0 auto;
+}
+
+#menino{
+  height: 318px;
+  width: 173px;
+  position: fixed;
+  left: 300px;
+  animation: mymove 8s linear;
+  animation-fill-mode: forwards;
+}
+
+.menino{
+  width:60px;
+  height:50px;
+  margin-top: 500px;
+  background-image:url("img/images.png");
+  animation-name: menino;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:steps(8, end);
+  animation-position:200px;
+  }
+
+@keyframes menino{
+  from{background-position: 0 0;}
+
+  to{background-position: -1472px 0;}
 }
